@@ -2,31 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-24T14:34:57 IST" name="Default suite" finished-at="2023-05-24T14:35:25 IST" duration-ms="27347">
+  <suite started-at="2023-05-24T18:55:15 IST" name="Default suite" finished-at="2023-05-24T18:56:18 IST" duration-ms="63456">
     <groups>
     </groups>
-    <test started-at="2023-05-24T14:34:57 IST" name="Default test" finished-at="2023-05-24T14:35:25 IST" duration-ms="27347">
-      <class name="dataDrivenUsingCsv.CSVAssignment">
-        <test-method is-config="true" signature="setup()[pri:0, instance:dataDrivenUsingCsv.CSVAssignment@2ea227af]" started-at="2023-05-24T14:34:57 IST" name="setup" finished-at="2023-05-24T14:35:06 IST" duration-ms="8560" status="PASS">
+    <test started-at="2023-05-24T18:55:15 IST" name="Default test" finished-at="2023-05-24T18:56:18 IST" duration-ms="63456">
+      <class name="waitsExamples.ImplicitWaitAssignment">
+        <test-method signature="TestSpicejetFlow()[pri:0, instance:waitsExamples.ImplicitWaitAssignment@3c9d0b9d]" started-at="2023-05-24T18:55:15 IST" name="TestSpicejetFlow" finished-at="2023-05-24T18:56:17 IST" duration-ms="62547" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="locatorsTestingBlog()[pri:0, instance:dataDrivenUsingCsv.CSVAssignment@2ea227af]" started-at="2023-05-24T14:35:06 IST" name="locatorsTestingBlog" finished-at="2023-05-24T14:35:24 IST" duration-ms="17957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- locatorsTestingBlog -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dataDrivenUsingCsv.CSVAssignment@2ea227af]" started-at="2023-05-24T14:35:24 IST" name="tearDown" finished-at="2023-05-24T14:35:25 IST" duration-ms="784" status="PASS">
+        </test-method> <!-- TestSpicejetFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:waitsExamples.ImplicitWaitAssignment@3c9d0b9d]" started-at="2023-05-24T18:56:17 IST" name="tearDown" finished-at="2023-05-24T18:56:18 IST" duration-ms="875" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=locatorsTestingBlog status=SUCCESS method=CSVAssignment.locatorsTestingBlog()[pri:0, instance:dataDrivenUsingCsv.CSVAssignment@2ea227af] output={null}]]]>
+                <![CDATA[[TestResult name=TestSpicejetFlow status=SUCCESS method=ImplicitWaitAssignment.TestSpicejetFlow()[pri:0, instance:waitsExamples.ImplicitWaitAssignment@3c9d0b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- dataDrivenUsingCsv.CSVAssignment -->
+      </class> <!-- waitsExamples.ImplicitWaitAssignment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
