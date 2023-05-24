@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -60,12 +61,22 @@ public class CSVAssignment {
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//button[@name='websubmit']")).click();
 			Thread.sleep(8000);
-			Alert alert = driver.switchTo().alert();
-			System.out.println(alert.getText());
-			String text = alert.getText();
 			
+			//driver.switchTo().frame(0);
+			WebElement elem = driver.findElement(By.xpath("//div[contains(text(),'No one else will see your date of birth. You can c')]"));
+			String text = elem.getText();
+			System.out.println(text);
 			Assert.assertEquals("No one else will see your date of birth. You can change this on your profile later.", text);
-			driver.switchTo().alert().dismiss();
+			
+			
+			driver.findElement(By.xpath("//a[contains(text(),'Cancel')]")).click();
+			
+			//Alert alert = driver.switchTo().alert();
+			//System.out.println(alert.getText());
+			//String text = alert.getText();
+			
+			//Assert.assertEquals("No one else will see your date of birth. You can change this on your profile later.", text);
+			//driver.switchTo().alert().dismiss();
 			
 		}
 		
